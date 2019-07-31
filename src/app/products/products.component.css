@@ -1,7 +1,15 @@
-.product-card {
-  width: 21em;
-}
+  .product-card {
+    width: 21em;
+  }
   
+  #title, .tab {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .mat-tab-labels {
+    justify-content: center;
+  }
   .product-header-image {
     background-size: cover;
   }

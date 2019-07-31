@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
 import { ProductElement } from '../interfaces/ProductsElement';
-import { element } from 'protractor';
 
 @Component({
   selector: 'app-products',

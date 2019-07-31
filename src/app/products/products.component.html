@@ -1,19 +1,97 @@
-<p>products works!</p>
-<mat-card class="flexContainer">
-                <div *ngFor="let data of dataSource">
-                        <mat-card  class="product-card flexItem" *ngIf="data.categoryID === 1" >
-                                <mat-card-header>
-                                        <div mat-card-avatar class="product-header-image"></div>
-                                        <mat-card-title>{{ data.name}}</mat-card-title>
-                                        <mat-card-subtitle>Price: ${{ data.price}}</mat-card-subtitle>
-                                </mat-card-header>
-                                <img mat-card-image src="../assets/{{data.src}}"   alt="Photo of a Pizza">
+<h1 id="title">MENU</h1>
+<mat-tab-group>
+                <mat-tab label="Pizza" class="tab"> 
+                                <mat-card class="flexContainer">
+                                                <div *ngFor="let data of dataSource">
+                                                        <mat-card  class="product-card flexItem" *ngIf="data.categoryID === 1" >
+                                                                <mat-card-header>
+                                                                        <div mat-card-avatar class="product-header-image"></div>
+                                                                        <mat-card-title>{{ data.name}}</mat-card-title>
+                                                                        <mat-card-subtitle>Price: ${{ data.price}}</mat-card-subtitle>
+                                                                </mat-card-header>
+                                                                <img mat-card-image src="../assets/{{data.src}}"   alt="Photo of a Pizza">
+                                                                <mat-card-content>
+                                                                        <p>{{data.description }}</p>
+                                                                        <h4>{{ data.calories }}</h4>
+                                                                </mat-card-content>
+                                                        </mat-card>
+                                                </div>
+                                </mat-card>
+                
+                </mat-tab>
+                <mat-tab label="Stromboli" class="tab"> 
+                                <mat-card class="flexContainer">
+                                                <div *ngFor="let data of dataSource">
+                                                        <mat-card  class="product-card flexItem" *ngIf="data.categoryID === 2" >
+                                                                <mat-card-header>
+                                                                        <div mat-card-avatar class="product-header-image"></div>
+                                                                        <mat-card-title>{{ data.name}}</mat-card-title>
+                                                                        <mat-card-subtitle>Price: ${{ data.price}}</mat-card-subtitle>
+                                                                </mat-card-header>
+                                                                <img mat-card-image src="../assets/{{data.src}}"   alt="Photo of a Stromboli">
+                                                                <mat-card-content>
+                                                                        <p>{{data.description }}</p>
+                                                                        <h4>{{ data.calories }}</h4>
+                                                                </mat-card-content>
+                                                        </mat-card>
+                                                </div>
+                                </mat-card>
+                
+                </mat-tab>
+                <mat-tab label="Calzone" class="tab">
+                                <mat-card class="flexContainer">
+                                                <div *ngFor="let data of dataSource">
+                                                        <mat-card  class="product-card flexItem" *ngIf="data.categoryID === 3" >
+                                                                <mat-card-header>
+                                                                        <div mat-card-avatar class="product-header-image"></div>
+                                                                        <mat-card-title>{{ data.name}}</mat-card-title>
+                                                                        <mat-card-subtitle>Price: ${{ data.price}}</mat-card-subtitle>
+                                                                </mat-card-header>
+                                                                <img mat-card-image src="../assets/{{data.src}}"   alt="Photo of a Calzone">
+                                                                <mat-card-content>
+                                                                        <p>{{data.description }}</p>
+                                                                        <h4>{{ data.calories }}</h4>
+                                                                </mat-card-content>
+                                                        </mat-card>
+                                                </div>
+                                </mat-card>
+                </mat-tab>
+                <mat-tab label="Sides" class="tab">
+                                <mat-card class="flexContainer">
+                                                <div *ngFor="let data of dataSource">
+                                                        <mat-card  class="product-card flexItem" *ngIf="data.categoryID === 4" >
+                                                                <mat-card-header>
+                                                                        <div mat-card-avatar class="product-header-image"></div>
+                                                                        <mat-card-title>{{ data.name}}</mat-card-title>
+                                                                        <mat-card-subtitle>Price: ${{ data.price}}</mat-card-subtitle>
+                                                                </mat-card-header>
+                                                                <img mat-card-image src="../assets/{{data.src}}"   alt="Photo of a Sides">
+                                                                <mat-card-content>
+                                                                        <p>{{data.description }}</p>
+                                                                        <h4>{{ data.calories }}</h4>
+                                                                </mat-card-content>
+                                                        </mat-card>
+                                                </div>
+                                </mat-card>
+                </mat-tab>
+                <mat-tab label="Drinks" class="tab">
+                                <mat-card class="flexContainer">
+                                                <div *ngFor="let data of dataSource">
+                                                        <mat-card  class="product-card flexItem" *ngIf="data.categoryID === 5" >
+                                                                <mat-card-header>
+                                                                        <div mat-card-avatar class="product-header-image"></div>
+                                                                        <mat-card-title>{{ data.name}}</mat-card-title>
+                                                                        <mat-card-subtitle>Price: ${{ data.price}}</mat-card-subtitle>
+                                                                </mat-card-header>
+                                                                <img mat-card-image src="../assets/{{data.src}}"   alt="Photo of a Drinks">
+                                                                <mat-card-content>
+                                                                        <p>{{data.description }}</p>
+                                                                        <h4>{{ data.calories }}</h4>
+                                                                </mat-card-content>
+                                                        </mat-card>
+                                                </div>
+                                </mat-card>
+                </mat-tab>
 
-                                <!-- <img mat-card-image src="../assets/imgs/MeatLoversBreakfastPizza.jpg"  alt="Photo of a Pizza"> -->
-                                <mat-card-content>
-                                        <p>{{data.description }}</p>
-                                        <h4>{{ data.calories }}</h4>
-                                </mat-card-content>
-                        </mat-card>
-                </div>
-</mat-card>
+</mat-tab-group>
+

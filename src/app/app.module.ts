@@ -13,6 +13,10 @@ import { UserService } from './user.service';
 import { HttpClientModule } from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
+
 import { ProductService } from './product.service';
 
 
@@ -31,6 +35,9 @@ import { ProductService } from './product.service';
     // Mat
    BrowserAnimationsModule,
    MatCardModule,
+   MatTabsModule,
+   MatMenuModule,
+   MatIconModule,
   ],
   providers: [
     UserService,
