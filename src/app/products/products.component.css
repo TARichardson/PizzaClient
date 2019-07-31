@@ -1,0 +1,20 @@
+.product-card {
+  width: 21em;
+}
+  
+  .product-header-image {
+    background-size: cover;
+  }
+
+  .flexContainer {
+    background-color: #4642424f; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .flexItem {
+    flex: 1;
+    margin: 1em .5em;
+  }

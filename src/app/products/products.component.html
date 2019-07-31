@@ -1,0 +1,19 @@
+<p>products works!</p>
+<mat-card class="flexContainer">
+                <div *ngFor="let data of dataSource">
+                        <mat-card  class="product-card flexItem" *ngIf="data.categoryID === 1" >
+                                <mat-card-header>
+                                        <div mat-card-avatar class="product-header-image"></div>
+                                        <mat-card-title>{{ data.name}}</mat-card-title>
+                                        <mat-card-subtitle>Price: ${{ data.price}}</mat-card-subtitle>
+                                </mat-card-header>
+                                <img mat-card-image src="../assets/{{data.src}}"   alt="Photo of a Pizza">
+
+                                <!-- <img mat-card-image src="../assets/imgs/MeatLoversBreakfastPizza.jpg"  alt="Photo of a Pizza"> -->
+                                <mat-card-content>
+                                        <p>{{data.description }}</p>
+                                        <h4>{{ data.calories }}</h4>
+                                </mat-card-content>
+                        </mat-card>
+                </div>
+</mat-card>
